@@ -142,7 +142,7 @@ const Footer = ({ onNavigate = () => {} }) => {
                 </h5>
 
                 <p className="text-[16px] sm:text-[18px] leading-7 sm:leading-8">
-                 Flat No 6, Wavi, Nashik, Sinnar, Maharashtra, India, 422104.
+                 Flat No 11 Ashirwad App, Indranagari Parisar, Kamathwade Rd, Nr Gajanan Maharaj Mandir, Nashik, 422008
                 </p>
               </div>
 

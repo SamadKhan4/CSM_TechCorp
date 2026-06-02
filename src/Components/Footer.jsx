@@ -24,6 +24,29 @@ const serviceLinks = [
   { label: "Digital Marketing", path: "/services/digital" },
 ];
 
+const socialLinks = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61571324603103",
+    icon: FaFacebook,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/tri.llionappstechnology/",
+    icon: FaInstagram,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/106096118/",
+    icon: FaLinkedin,
+  },
+  {
+    label: "X",
+    href: "https://x.com/trillionappst",
+    icon: FaXTwitter,
+  },
+];
+
 const Footer = ({ onNavigate = () => {} }) => {
   return (
     <footer className="bg-[#14243D] text-white">
@@ -44,17 +67,18 @@ const Footer = ({ onNavigate = () => {} }) => {
             </p>
 
             <div className="flex gap-3">
-              {[FaFacebook, FaInstagram, FaLinkedin, FaXTwitter].map(
-                (Icon, index) => (
-                  <a
-                    key={index}
-                    href="/"
-                    className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#071B3A] hover:scale-110 duration-300"
-                  >
-                    <Icon size={18} />
-                  </a>
-                )
-              )}
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#071B3A] hover:scale-110 duration-300"
+                >
+                  <Icon size={18} />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -114,20 +138,19 @@ const Footer = ({ onNavigate = () => {} }) => {
 
               <div>
                 <h5 className="font-semibold text-white text-[18px] sm:text-[22px] mb-3">
-                  Registered Office:
+                  Head Office:
                 </h5>
 
                 <p className="text-[16px] sm:text-[18px] leading-7 sm:leading-8">
-                  Rh.c-8 Shyamsundar R/h Vitthal, Vilholi, Nashik,
-                  Maharashtra, India, 422010
+                 Flat No 6, Wavi, Nashik, Sinnar, Maharashtra, India, 422104.
                 </p>
               </div>
 
               <a
-                href="mailto:hr-info@csmtechcorp.com"
+                href="mailto:hr-manager@csmtechcorp.com"
                 className="inline-block break-all underline text-[16px] sm:text-[18px]"
               >
-                hr-info@csmtechcorp.com
+                hr-manager@csmtechcorp.com
               </a>
             </div>
           </div>

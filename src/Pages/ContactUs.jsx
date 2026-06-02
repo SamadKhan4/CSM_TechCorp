@@ -8,12 +8,12 @@ import CTA from "../Components/CTA";
     {
       icon: <FiMapPin />,
       title: "Office Address",
-      text: "Plot No.47, 3rd Floor, Corporation House, 3379/47, Manakpur Ring Rd, Pratap Nagar, Nagpur, Maharashtra 440026",
+      text: "Plot No.47, 3rd Floor, Kotwalnagar, Khamla Nagpur, Maharashtra, 440022 India.",
     },
     {
       icon: <FiPhone />,
       title: "Phone Number",
-      text: "Call us for quick assistance and consultation.\n\n+91 9637081988",
+      text: "Call us for quick assistance and consultation.\n\n+91 9175433361",
     },
     {
       icon: <FiMail />,
